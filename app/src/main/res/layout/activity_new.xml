@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.duzeming.billmanage.view.NewActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="@color/colorPrimary">
+
+        <Button
+            android:id="@+id/btn_toolbar_cancel"
+            android:layout_width="34dp"
+            android:layout_height="34dp"
+            android:layout_gravity="left"
+            android:background="@drawable/cancel"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="新建"
+            android:textSize="20sp"
+            android:layout_gravity="center"
+            android:textColor="#ffffff"/>
+        <Button
+            android:id="@+id/btn_toolbar_ok"
+            android:layout_width="34dp"
+            android:layout_height="34dp"
+            android:layout_gravity="right"
+            android:background="@drawable/ok"
+            android:layout_marginRight="4dp"/>
+
+    </android.support.v7.widget.Toolbar>
+
+    <EditText
+        android:id="@+id/et_new_reason"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"
+        android:textSize="24sp"
+        android:layout_marginTop="6dp"
+        android:hint="原因"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp">
+
+        <EditText
+            android:id="@+id/et_new_money"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="24sp"
+            android:inputType="numberDecimal"
+            android:hint="金额"/>
+        <Spinner
+            android:id="@+id/sp_new_or"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:entries="@array/new_or"/>
+        <Spinner
+            android:id="@+id/sp_new_mode"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:entries="@array/new_mode"/>
+
+    </LinearLayout>
+
+</LinearLayout>

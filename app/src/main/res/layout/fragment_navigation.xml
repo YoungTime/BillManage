@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#71000000"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/ll_navigation_list"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/iv_navigation_list"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:src="@drawable/list_out"/>
+            <TextView
+                android:id="@+id/tv_navigation_list"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="账本"
+                android:textSize="12sp"
+                android:layout_marginTop="2dp"
+                android:textColor="@color/colorOut"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_navigation_chart"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/iv_navigation_chart"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:src="@drawable/chart_out"
+                />
+            <TextView
+                android:id="@+id/tv_navigation_chart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="数据"
+                android:layout_marginTop="2dp"
+                android:textSize="12sp"
+                android:textColor="@color/colorOut"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/ll_navigation_my"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/iv_navigation_my"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:src="@drawable/my_out"/>
+            <TextView
+                android:id="@+id/tv_navigation_my"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="我的"
+                android:textSize="12sp"
+                android:layout_marginTop="2dp"
+                android:textColor="@color/colorOut"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
